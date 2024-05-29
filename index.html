@@ -32,9 +32,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
+      padding: 1px 20px;
       background-color: #333;
       color: white;
+      box-shadow: 10px 10px 40px rgb(0, 0, 0);
     }
 
     .navbar a {
@@ -49,7 +50,7 @@
     }
 
     h1.title {
-      font-size: 24px;
+      font-size: 30px;
     }
 
     #container {
@@ -58,7 +59,7 @@
       align-items: center;
       margin-top: 20px;
       justify-content: center;
-      margin-left: 350px;
+      margin-left: 380px;
     }
     
     .video-container {
@@ -68,15 +69,15 @@
     }
 
     video {
-      margin-top: 300px;
+      margin-top: 250px;
       width: 100%;
       height: 100%;
     }
 
     canvas {
       position: absolute;
-      top: 157px;
-      left: 380px;
+      top: 127px;
+      left: 410px;
       z-index: 1;
     }
       
@@ -86,8 +87,14 @@
       background-color: white;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease; /* Smooth transition for scaling */
     }
+
+    .paragraph:hover {
+      transform: scale(1.05); /* Slightly increases the size of the container */
+    }
+
 
     .paragraph h3 {
       margin-top: 0;
@@ -97,9 +104,8 @@
   </head>
   <body>
     <div class="navbar">
-      <img class="logo" src="" alt="">
+      <img class="logo" src="images/logo.png" alt="">
       <h1 class="title">AI camera</h1>
-      <a href="">About Us</a>
       <a href="">Contact Us</a>
     </div>
 
@@ -107,7 +113,7 @@
       <video id="video" width="720" height="560" autoplay muted></video>
       <canvas id="overlay" width="720" height="560"></canvas>
       <div class="paragraph">
-        <h3>The Importance of Data Secuirty </h3>
+        <h3>AI and Faces</h3>
         <p>
           Ever wonder how your computer recognizes your face? It’s like magic! Your camera captures an image of your face, and sophisticated software detects and analyzes your unique features—like the distance between your eyes and the shape of your nose. This data is then converted into a faceprint and matched against a database to identify or verify you. From unlocking your phone to breezing through airport security, facial recognition has become a handy tool, blending convenience with a touch of futuristic flair.
         </p>
