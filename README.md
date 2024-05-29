@@ -1,3 +1,6 @@
+![Screenshot 2024-05-29 at 4 33 15 PM](https://github.com/rogerthat808/Face-Recognition/assets/113072854/d0f645be-e747-483f-add7-48ac13b83929)
+
+
 # Face Detection App
 
 This Face Detection App demonstrates how Artificial Intelligence (AI) can be used to detect faces, emotions, gender, and age in images. The app utilizes the face-api.js library, a JavaScript face detection and recognition library created by justadudewhohacks.
