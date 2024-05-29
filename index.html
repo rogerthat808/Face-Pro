@@ -1,28 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Face Detection</title>
-  <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Detection</title>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+      body {
+        background-color: rgb(235, 217, 190);
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      
+      #container {
+        margin: 10px;
+        padding: 30px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      
+      .navbar {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .navbar .logo {
+      width: 50px;
+      height: auto;
+    }
+
+    h1.title {
+      font-size: 24px;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      justify-content: center;
+      margin-left: 350px;
+    }
+    
+    .video-container {
+      position: relative;
+      width: 720px;
+      height: 560px;
+    }
+
+    video {
+      margin-top: 300px;
+      width: 100%;
+      height: 100%;
     }
 
     canvas {
       position: absolute;
+      top: 157px;
+      left: 380px;
+      z-index: 1;
     }
-  </style>
-</head>
-<body>
-  <video id="video" width="720" height="560" autoplay muted></video>
-</body>
-</html>
+      
+    .paragraph {
+      max-width: 720px;
+      margin: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .paragraph h3 {
+      margin-top: 0;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="logo" src="" alt="">
+      <h1 class="title">AI camera</h1>
+      <a href="">About Us</a>
+      <a href="">Contact Us</a>
+    </div>
+
+    <div id="container" style="position: relative; width: 720px; height: 560px;">
+      <video id="video" width="720" height="560" autoplay muted></video>
+      <canvas id="overlay" width="720" height="560"></canvas>
+      <div class="paragraph">
+        <h3>The Importance of Data Secuirty </h3>
+        <p>
+          Ever wonder how your computer recognizes your face? It’s like magic! Your camera captures an image of your face, and sophisticated software detects and analyzes your unique features—like the distance between your eyes and the shape of your nose. This data is then converted into a faceprint and matched against a database to identify or verify you. From unlocking your phone to breezing through airport security, facial recognition has become a handy tool, blending convenience with a touch of futuristic flair.
+        </p>
+      </div>
+    </div>
+  </body>
+  </html>
+  
