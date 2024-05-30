@@ -28,6 +28,8 @@ To get started with the Face Detection App, follow these steps:
 
 ## Usage
 
+![Screenshot 2024-05-29 at 9 27 47 PM](https://github.com/rogerthat808/Face-Recognition/assets/113072854/e408f7de-d6ef-4f45-9a60-8e94626c9225)
+
 1. Allow the browser access to your camera.
 2. Wait for the app to detect faces, emotions, gender, and age.
 3. View the results displayed on the screen.
